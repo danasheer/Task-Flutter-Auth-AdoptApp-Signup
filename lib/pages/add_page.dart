@@ -19,7 +19,7 @@ class AddPage extends StatelessWidget {
         child: Column(
           children: [
             const Text("Fill those field to add a Pet"),
-            AddFormPet(),
+            AddPetForm(),
           ],
         ),
       ),

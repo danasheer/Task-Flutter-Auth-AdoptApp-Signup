@@ -7,6 +7,7 @@ class PetsProvider extends ChangeNotifier {
 
   Future<void> getPets() async {
     pets = await DioClient().getPets();
+    notifyListeners();
   }
 
   void createPet(Pet pet) async {
